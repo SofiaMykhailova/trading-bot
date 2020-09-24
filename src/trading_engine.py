@@ -52,7 +52,7 @@ class TradingEngine:
                 ))
                 if decision.lower() == 'yes':
                     print('Lets sell your currency!')
-                if decision in ('No','no'):
+                if decision.lower() == 'no':
                     print(f'Please transfer {self.CURRENCY_1} to another wallet or use in other transactions')
                     sys.exit(0)
                 else:
